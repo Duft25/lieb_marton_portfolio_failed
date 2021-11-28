@@ -1,0 +1,566 @@
+/*Név: Lieb Márton
+Neptun kód: DRVR4D*/
+
+/*colour palette
+#FFFFFF
+#CFF6FF
+#E99B26
+#334756
+#082032
+*/
+
+/*    font-family: 'Bellota Text', cursive;    */
+/*    font-family: 'Major Mono Display', monospace;    */
+
+body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/*Header*/
+
+header p {
+	color: #CFF6FF;
+	background-color: #E99B26;
+	font-size: 1.75em;
+	text-shadow: 0.4px 0.2px rgba(8, 32, 50, 1.0), 
+	0.6px 0.4px rgba(8, 32, 50, 1.0), 
+	0.8px 0.6px rgba(8, 32, 50, 1.0), 
+	1px 0.8px rgba(8, 32, 50, 1.0), 
+	1.2px 1px rgba(8, 32, 50, 1.0), 
+	1.4px 1.2px rgba(8, 32, 50, 1.0), 
+	1.6px 1.4px rgba(8, 32, 50, 1.0), 
+	1.8px 1.6px rgba(8, 32, 50, 1.0), 
+	2px 1.8px rgba(8, 32, 50, 1.0), 
+	2.2px 2px rgba(8, 32, 50, 1.0);
+	font-family: 'Major Mono Display', monospace;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-right: auto;
+}
+
+li, a, button {
+	font-weight: 750;
+	color: #CFF6FF;
+	text-decoration: none;
+}
+
+header {
+	background-color: #E99B26;
+	font-family: 'Bellota Text', cursive;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 5px 5px;
+}
+
+.linkek {
+	list-style: none;
+}
+
+.linkek li {
+	display: inline-block;
+	padding: 5px;
+}
+
+.linkek li a {
+	transition: all 0.25s ease 0s;
+}
+
+.linkek li a:hover {
+	color: #082032;
+}
+
+button {
+	font-weight: 750;
+	font-family: 'Bellota Text', cursive;
+	margin: 0px 10px 0px 10px;
+	padding: 10px 20px;
+	background-color: #082032;
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: all 0.25s ease 0s;
+}
+
+button:hover {
+	color: #082032;
+	background-color: rgba(207, 246, 255, 0.5);
+}
+
+/*Footer*/
+
+footer p {
+	color: #CFF6FF;
+	background-color: #082032;
+	font-size: 1.75em;
+	text-shadow: 0.4px 0.2px rgba(233, 155, 38, 1.0), 
+	0.6px 0.4px rgba(233, 155, 38, 1.0), 
+	0.8px 0.6px rgba(233, 155, 38, 1.0), 
+	1px 0.8px rgba(233, 155, 38, 1.0), 
+	1.2px 1px rgba(233, 155, 38, 1.0), 
+	1.4px 1.2px rgba(233, 155, 38, 1.0), 
+	1.6px 1.4px rgba(233, 155, 38, 1.0), 
+	1.8px 1.6px rgba(233, 155, 38, 1.0), 
+	2px 1.8px rgba(233, 155, 38, 1.0), 
+	2.2px 2px rgba(233, 155, 38, 1.0);
+	font-family: 'Major Mono Display', monospace;
+	cursor: pointer;
+	margin-left: 15px;
+	margin-right: auto;
+}
+
+footer {
+	background-color: #082032;
+	font-family: 'Bellota Text', cursive;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 5px 5px;
+}
+
+.linkek2 {
+	list-style: none;
+}
+
+.linkek2 li {
+	display: inline-block;
+	padding: 5px;
+}
+
+.linkek2 li a {
+	transition: all 0.25s ease 0s;
+}
+
+.linkek2 li a:hover {
+	color: #E99B26;
+}
+
+
+
+.szoveg {
+	color: #CFF6FF;
+	background-color: #E99B26;
+	font-family: 'Bellota Text', cursive;
+	border-radius: 25px;
+	margin: 10px;
+	padding: 10px 20px;
+}
+
+.forrasok {
+	text-align: center;
+	color: #CFF6FF;
+	background-color: #E99B26;
+	font-family: 'Bellota Text', cursive;
+	border-radius: 25px;
+	margin: 10px;
+	padding: 10px 20px;
+}
+
+.fixed {
+	z-index: -1;
+	background-color: #CFF6FF;
+	position: fixed;
+	top: 30vh;
+	left: 0;
+	height: 40vh;
+	width: 100%;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*Image*/
+
+.kep {
+	position: relative;
+	max-width: 60vw;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
+
+.kep:hover {
+	cursor: pointer;
+	animation: scale 0.125s linear;
+	animation-fill-mode: forwards;
+}
+
+.kep1 {
+	width: 100%;
+	animation: scaledown 0.125s linear;
+	animation-fill-mode: forwards;
+}
+
+/*Image2*/
+
+.flex2 {
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-basis: 100%;*/
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+}
+
+.flex2 > * {
+	flex: 1 1 33%;
+}
+
+.kep2 {
+	z-index: 2;
+	align-content: center;
+	text-align: center;
+	width: 100%;
+	margin: 2vw;
+	color: #E99B26;
+	font-size: 1.25em;
+	text-shadow: 0.4px 0.2px rgba(8, 32, 50, 1.0), 
+	0.6px 0.4px rgba(8, 32, 50, 1.0), 
+	0.8px 0.6px rgba(8, 32, 50, 1.0), 
+	1px 0.8px rgba(8, 32, 50, 1.0), 
+	1.2px 1px rgba(8, 32, 50, 1.0), 
+	1.4px 1.2px rgba(8, 32, 50, 1.0), 
+	1.6px 1.4px rgba(8, 32, 50, 1.0), 
+	1.8px 1.6px rgba(8, 32, 50, 1.0), 
+	2px 1.8px rgba(8, 32, 50, 1.0), 
+	2.2px 2px rgba(8, 32, 50, 1.0);
+	font-family: 'Major Mono Display', monospace;
+}
+
+.kep21:hover {
+	cursor: pointer;
+	animation: scale 0.125s linear;
+	animation-fill-mode: forwards;
+}
+
+.kep21 {
+	box-shadow: 0.75vw 0.75vw 2vw 0.75vw rgba(8, 32, 50, 0.25);
+	width: 75%;
+	animation: scaledown 0.125s linear;
+	animation-fill-mode: forwards;
+}
+
+/*Image3*/
+
+.flex3 {
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-basis: 100%;*/
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+}
+
+.flex3 > * {
+	flex: 1 1 25%;
+}
+
+.kep3 {
+	z-index: 2;
+	align-content: center;
+	text-align: center;
+	width: 100%;
+	margin: 2vw;
+	color: #E99B26;
+	font-size: 1.25em;
+	text-shadow: 0.4px 0.2px rgba(8, 32, 50, 1.0), 
+	0.6px 0.4px rgba(8, 32, 50, 1.0), 
+	0.8px 0.6px rgba(8, 32, 50, 1.0), 
+	1px 0.8px rgba(8, 32, 50, 1.0), 
+	1.2px 1px rgba(8, 32, 50, 1.0), 
+	1.4px 1.2px rgba(8, 32, 50, 1.0), 
+	1.6px 1.4px rgba(8, 32, 50, 1.0), 
+	1.8px 1.6px rgba(8, 32, 50, 1.0), 
+	2px 1.8px rgba(8, 32, 50, 1.0), 
+	2.2px 2px rgba(8, 32, 50, 1.0);
+	font-family: 'Major Mono Display', monospace;
+}
+
+.kep31:hover {
+	cursor: pointer;
+	animation: scale 0.125s linear;
+	animation-fill-mode: forwards;
+}
+
+.kep31 {
+	box-shadow: 0.75vw 0.75vw rgba(8, 32, 50, 1.0);
+	width: 75%;
+	animation: scaledown 0.125s linear;
+	animation-fill-mode: forwards;
+}
+
+.leiras {
+	margin: 2.5vw;
+}
+
+.leiras3 {
+	text-shadow: 0.4px 0.2px rgba(233, 155, 38, 1.0), 
+	0.6px 0.4px rgba(233, 155, 38, 1.0), 
+	0.8px 0.6px rgba(233, 155, 38, 1.0), 
+	1px 0.8px rgba(233, 155, 38, 1.0), 
+	1.2px 1px rgba(233, 155, 38, 1.0), 
+	1.4px 1.2px rgba(233, 155, 38, 1.0), 
+	1.6px 1.4px rgba(233, 155, 38, 1.0), 
+	1.8px 1.6px rgba(233, 155, 38, 1.0), 
+	2px 1.8px rgba(233, 155, 38, 1.0), 
+	2.2px 2px rgba(233, 155, 38, 1.0);
+	color: #CFF6FF;
+	margin: 2.5vw;
+}
+
+/*Aston Martin Vulcan*/
+
+.ast-leiras {
+	z-index: 1;
+	text-align: center;
+	font-size: 1.75em;
+	text-shadow: 0.5px 0.25px rgba(8, 32, 50, 1.0), 
+	0.75px 0.5px rgba(8, 32, 50, 1.0), 
+	1px 0.75px rgba(8, 32, 50, 1.0), 
+	1.25px 1px rgba(8, 32, 50, 1.0), 
+	1.5px 1.25px rgba(8, 32, 50, 1.0), 
+	1.75px 1.5px rgba(8, 32, 50, 1.0), 
+	2px 1.75px rgba(8, 32, 50, 1.0), 
+	2.25px 2px rgba(8, 32, 50, 1.0);
+	font-family: 'Major Mono Display', monospace;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.175);
+	color: #CFF6FF;
+	opacity: 0;
+	transition: 0.125s linear;
+}
+
+.ast-leiras:hover {
+	opacity: 1;
+}
+
+/*Mclaren Speedtail*/
+
+.mcl-leiras {
+	z-index: 1;
+	text-align: center;
+	font-size: 1.75em;
+	text-shadow: 0.4px 0.2px rgba(8, 32, 50, 1.0), 
+	0.6px 0.4px rgba(8, 32, 50, 1.0), 
+	0.8px 0.6px rgba(8, 32, 50, 1.0), 
+	1px 0.8px rgba(8, 32, 50, 1.0), 
+	1.2px 1px rgba(8, 32, 50, 1.0), 
+	1.4px 1.2px rgba(8, 32, 50, 1.0), 
+	1.6px 1.4px rgba(8, 32, 50, 1.0), 
+	1.8px 1.6px rgba(8, 32, 50, 1.0), 
+	2px 1.8px rgba(8, 32, 50, 1.0), 
+	2.2px 2px rgba(8, 32, 50, 1.0);
+	font-family: 'Major Mono Display', monospace;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.175);
+	color: #CFF6FF;
+	opacity: 0;
+	transition: 0.125s linear;
+}
+
+.mcl-leiras:hover {
+	opacity: 1;
+}
+
+/*Toyota Hilux*/
+
+.th-leiras {
+	z-index: 1;
+	text-align: center;
+	font-size: 1.75em;
+	text-shadow: 0.4px 0.2px rgba(8, 32, 50, 1.0), 
+	0.6px 0.4px rgba(8, 32, 50, 1.0), 
+	0.8px 0.6px rgba(8, 32, 50, 1.0), 
+	1px 0.8px rgba(8, 32, 50, 1.0), 
+	1.2px 1px rgba(8, 32, 50, 1.0), 
+	1.4px 1.2px rgba(8, 32, 50, 1.0), 
+	1.6px 1.4px rgba(8, 32, 50, 1.0), 
+	1.8px 1.6px rgba(8, 32, 50, 1.0), 
+	2px 1.8px rgba(8, 32, 50, 1.0), 
+	2.2px 2px rgba(8, 32, 50, 1.0);
+	font-family: 'Major Mono Display', monospace;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.175);
+	color: #CFF6FF;
+	opacity: 0;
+	transition: 0.125s linear;
+}
+
+.th-leiras:hover {
+	opacity: 1;
+}
+
+/*Toyota GT86*/
+
+.t86-leiras {
+	z-index: 1;
+	text-align: center;
+	font-size: 1.75em;
+	text-shadow: 0.4px 0.2px rgba(8, 32, 50, 1.0), 
+	0.6px 0.4px rgba(8, 32, 50, 1.0), 
+	0.8px 0.6px rgba(8, 32, 50, 1.0), 
+	1px 0.8px rgba(8, 32, 50, 1.0), 
+	1.2px 1px rgba(8, 32, 50, 1.0), 
+	1.4px 1.2px rgba(8, 32, 50, 1.0), 
+	1.6px 1.4px rgba(8, 32, 50, 1.0), 
+	1.8px 1.6px rgba(8, 32, 50, 1.0), 
+	2px 1.8px rgba(8, 32, 50, 1.0), 
+	2.2px 2px rgba(8, 32, 50, 1.0);
+	font-family: 'Major Mono Display', monospace;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.175);
+	color: #CFF6FF;
+	opacity: 0;
+	transition: 0.125s linear;
+}
+
+.t86-leiras:hover {
+	opacity: 1;
+}
+
+/*Volkswagen Beetle*/
+
+.vw-leiras {
+	z-index: 1;
+	text-align: center;
+	font-size: 1.75em;
+	text-shadow: 0.4px 0.2px rgba(8, 32, 50, 1.0), 
+	0.6px 0.4px rgba(8, 32, 50, 1.0), 
+	0.8px 0.6px rgba(8, 32, 50, 1.0), 
+	1px 0.8px rgba(8, 32, 50, 1.0), 
+	1.2px 1px rgba(8, 32, 50, 1.0), 
+	1.4px 1.2px rgba(8, 32, 50, 1.0), 
+	1.6px 1.4px rgba(8, 32, 50, 1.0), 
+	1.8px 1.6px rgba(8, 32, 50, 1.0), 
+	2px 1.8px rgba(8, 32, 50, 1.0), 
+	2.2px 2px rgba(8, 32, 50, 1.0);
+	font-family: 'Major Mono Display', monospace;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.175);
+	color: #CFF6FF;
+	opacity: 0;
+	transition: 0.125s linear;
+}
+
+.vw-leiras:hover {
+	opacity: 1;
+}
+
+/*Nissan Titan*/
+
+.nt-leiras {
+	z-index: 1;
+	text-align: center;
+	font-size: 1.75em;
+	text-shadow: 0.4px 0.2px rgba(8, 32, 50, 1.0), 
+	0.6px 0.4px rgba(8, 32, 50, 1.0), 
+	0.8px 0.6px rgba(8, 32, 50, 1.0), 
+	1px 0.8px rgba(8, 32, 50, 1.0), 
+	1.2px 1px rgba(8, 32, 50, 1.0), 
+	1.4px 1.2px rgba(8, 32, 50, 1.0), 
+	1.6px 1.4px rgba(8, 32, 50, 1.0), 
+	1.8px 1.6px rgba(8, 32, 50, 1.0), 
+	2px 1.8px rgba(8, 32, 50, 1.0), 
+	2.2px 2px rgba(8, 32, 50, 1.0);
+	font-family: 'Major Mono Display', monospace;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.175);
+	color: #FFFFFF;
+	opacity: 0;
+	transition: 0.125s linear;
+}
+
+.nt-leiras:hover {
+	opacity: 1;
+}
+
+.cc7-leiras
+
+/*image scale up uppon hovering*/
+
+@keyframes scaledown {
+	0%{
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@keyframes scale {
+	0%{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	100%{
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+}
